@@ -16,6 +16,10 @@ class HomeViewController {
 
     @GetMapping("/homeError")
     fun homeError(): String{
-        throw RuntimeException("Error")
+        /**
+         * 설명
+         * - 500 페이지 재현을 위해 오류를 발생시킨다.
+         * */
+        throw RuntimeException()
     }
 }
