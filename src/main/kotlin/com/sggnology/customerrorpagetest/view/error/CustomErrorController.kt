@@ -15,6 +15,10 @@ class CustomErrorController: ErrorController {
     fun errorPage(
         httpServletRequest: HttpServletRequest
     ): String{
+        /**
+         * 설명
+         * - 어떤 에러인지 식별하기 위해 servlet 에서 status code 를 추출한다.
+         * */
         val statusCode = httpServletRequest.getAttribute(RequestDispatcher.ERROR_STATUS_CODE)
 
         when(statusCode){
