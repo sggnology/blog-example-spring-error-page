@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 
 @Controller
 @RequestMapping("/error")
-class CustomErrorController: ErrorController {
+class CustomErrorViewController: ErrorController {
 
     @GetMapping("")
     fun errorPage(
